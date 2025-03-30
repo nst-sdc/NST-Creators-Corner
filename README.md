@@ -9,7 +9,7 @@ This project is a web application for the NST Creator’s Club, built to showcas
 - **Styling:** Tailwind CSS  
 - **Build Tool:** Vite  
 
-## �� Features  
+## Features  
 - 📌 Showcases club activities and events  
 - 👥 Displays contributions from members  
 - 🔥 Interactive and user-friendly UI  
