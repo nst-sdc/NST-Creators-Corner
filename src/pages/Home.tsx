@@ -9,18 +9,9 @@ import Button from '../components/Button';
 
 export default function Home() {
   const videos = [
-    {
-      id: '6pa5VZdKyqY',
-      title: 'Creators Corner Video 1'
-    },
-    {
-      id: 'oL2Lt8tT1ug',
-      title: 'Creators Corner Video 2'
-    },
-    {
-      id: '8kQyKTvtIUQ',
-      title: 'Creators Corner Video 3'
-    }
+    { id: '6pa5VZdKyqY', title: 'Creators Corner Video 1' },
+    { id: 'oL2Lt8tT1ug', title: 'Creators Corner Video 2' },
+    { id: '8kQyKTvtIUQ', title: 'Creators Corner Video 3' }
   ];
 
   return (
@@ -28,7 +19,7 @@ export default function Home() {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="pt-20 bg-gradient-to-br from-purple-800 via-indigo-700 to-pink-600 relative overflow-hidden">
+      <section className="pt-20 bg-gradient-to-br from-purple-800 via-indigo-700 to-pink-600 dark:from-navy dark:via-navy-light dark:to-navy relative overflow-hidden transition-colors duration-300">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -63,45 +54,12 @@ export default function Home() {
             </motion.div>
           </div>
         </motion.div>
-        
-        {/* Animated background elements */}
-        <div className="absolute inset-0 overflow-hidden">
-          {[...Array(5)].map((_, i) => (
-            <motion.div
-              key={i}
-              className="absolute bg-white/10 rounded-full"
-              style={{
-                width: Math.random() * 300 + 100,
-                height: Math.random() * 300 + 100,
-                left: `${Math.random() * 100}%`,
-                top: `${Math.random() * 100}%`,
-              }}
-              animate={{
-                x: [0, Math.random() * 100 - 50],
-                y: [0, Math.random() * 100 - 50],
-                scale: [1, 1.2, 1],
-              }}
-              transition={{
-                duration: Math.random() * 10 + 10,
-                repeat: Infinity,
-                repeatType: "reverse",
-              }}
-            />
-          ))}
-        </div>
       </section>
 
       {/* Video Showcase Section */}
-      <AnimatedSection className="py-20 bg-gradient-to-br from-gray-900 to-indigo-900">
+      <AnimatedSection className="py-20 bg-gray-900 dark:bg-navy transition-colors duration-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.h2 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="text-3xl font-bold text-center text-white mb-12"
-          >
-            Featured Content
-          </motion.h2>
-          
+          <h2 className="text-3xl font-bold text-center text-white mb-12">Featured Content</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {videos.map((video, index) => (
               <motion.div
@@ -113,13 +71,11 @@ export default function Home() {
                 className="aspect-video rounded-xl overflow-hidden shadow-lg transform transition-all duration-300 hover:shadow-2xl"
               >
                 <iframe
-                  width="100%"
-                  height="100%"
                   src={`https://www.youtube.com/embed/${video.id}`}
                   title={video.title}
+                  className="w-full h-full"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
-                  className="w-full h-full"
                 />
               </motion.div>
             ))}
@@ -128,64 +84,55 @@ export default function Home() {
       </AnimatedSection>
 
       {/* Team Preview Section */}
-      <AnimatedSection className="py-20 bg-gradient-to-br from-indigo-50 via-white to-purple-50">
+      <AnimatedSection className="py-20 bg-indigo-50 dark:bg-navy-light via-white dark:via-navy text-gray-800 dark:text-white transition-colors duration-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">Our Leadership</h2>
+          <h2 className="text-3xl font-bold text-center mb-12">Our Leadership</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <TeamMember
               name="Sahil Kumar"
               role="Main Coordinator"
-              image="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+              image="../../images/sahil.jpeg"
             />
             <TeamMember
               name="Yash Mali"
               role="Main Coordinator"
-              image="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+              image="../../images/yash.jpeg"
             />
             <TeamMember
               name="Rudraksha Gupta"
               role="Main Coordinator"
-              image="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+              image="../../images/rudrash.jpeg"
             />
-          </div>
-          <div className="text-center mt-8">
-            <Button href="/coordinators" variant="primary">
-              Meet Our Full Team
-            </Button>
           </div>
         </div>
       </AnimatedSection>
 
       {/* Events Section */}
-      <AnimatedSection className="py-20 bg-gradient-to-br from-purple-50 via-white to-indigo-50">
+      <AnimatedSection className="py-20 bg-purple-50 dark:bg-navy text-gray-800 dark:text-white transition-colors duration-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">Upcoming Events</h2>
+          <h2 className="text-3xl font-bold text-center mb-12">Upcoming Events</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <motion.div whileHover={{ scale: 1.02 }} transition={{ duration: 0.2 }}>
-              <EventCard
-                title="PodCoast 2024"
-                date="March 25, 2024"
-                description="Join us for an immersive podcasting workshop where you'll learn from industry experts and network with fellow creators!"
-                image="https://images.unsplash.com/photo-1478737270239-2f02b77fc618?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-              />
-            </motion.div>
-            <motion.div whileHover={{ scale: 1.02 }} transition={{ duration: 0.2 }}>
-              <EventCard
-                title="Content Creation Masterclass"
-                date="April 15, 2024"
-                description="Master the art of content creation with hands-on workshops covering video, audio, and social media optimization."
-                image="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-              />
-            </motion.div>
+            <EventCard
+              title="PodCoast 2024"
+              date="March 25, 2024"
+              description="Join us for an immersive podcasting workshop where you'll learn from industry experts and network with fellow creators!"
+              image="https://images.unsplash.com/photo-1478737270239-2f02b77fc618?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+            />
+            <EventCard
+              title="Content Creation Masterclass"
+              date="April 15, 2024"
+              description="Master the art of content creation with hands-on workshops covering video, audio, and social media optimization."
+              image="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+            />
           </div>
         </div>
       </AnimatedSection>
 
       {/* Footer */}
-      <footer className="bg-gradient-to-br from-gray-900 to-indigo-900 text-white py-8">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <footer className="bg-gray-900 dark:bg-navy text-white py-8 transition-colors duration-300">
+        <div className="max-w-7xl mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-400">© 2024 Creators Corner. All rights reserved by Vivek W.</p>
+            <p className="text-gray-400">© 2024 Creators Corner. All rights reserved.</p>
             <motion.a
               href="https://github.com/AryanVBW"
               target="_blank"

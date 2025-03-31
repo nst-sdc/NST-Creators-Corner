@@ -8,10 +8,11 @@ interface TeamMemberProps {
 
 export default function TeamMember({ name, role, image }: TeamMemberProps) {
   return (
-    <motion.div
-      whileHover={{ y: -10 }}
-      className="flex flex-col items-center p-6 space-y-4 bg-white rounded-xl shadow-md transition-all duration-300 hover:shadow-xl"
-    >
+<motion.div
+  whileHover={{ y: -10 }}
+  className="flex flex-col items-center p-6 space-y-4 bg-white dark:bg-navy text-gray-800 dark:text-white rounded-xl shadow-md transition-colors duration-300 hover:shadow-xl"
+>
+
       <motion.img
         whileHover={{ scale: 1.1 }}
         src={image}
@@ -22,7 +23,7 @@ export default function TeamMember({ name, role, image }: TeamMemberProps) {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.2 }}
-        className="text-xl font-semibold text-gray-800"
+        className="text-xl font-semibold text-gray-800 dark:text-white"
       >
         {name}
       </motion.h3>
@@ -30,7 +31,7 @@ export default function TeamMember({ name, role, image }: TeamMemberProps) {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.3 }}
-        className="text-indigo-600 font-medium"
+        className="text-indigo-600 dark:text-indigo-400 font-medium"
       >
         {role}
       </motion.p>
