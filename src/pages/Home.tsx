@@ -1,5 +1,6 @@
+import React from 'react';
 import { motion } from 'framer-motion';
-import { Youtube, Mail, MapPin, Phone, Github } from 'lucide-react';
+import { Github } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import TeamMember from '../components/TeamMember';
 import EventCard from '../components/EventCard';
