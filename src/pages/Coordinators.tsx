@@ -49,12 +49,7 @@ export default function Coordinators() {
           </h1>
           <div className="grid grid-cols-1 gap-12">
             {coordinators.map((coordinator, index) => (
-              <div
-                key={index}
-                className="group bg-white dark:bg-gray-800 rounded-xl shadow-lg transform transition duration-300 hover:-translate-y-3 hover:shadow-2xl"
-              >
-                <CoordinatorCard key={index} {...coordinator} />
-              </div>
+              <CoordinatorCard key={index} {...coordinator} />
             ))}
           </div>
         </div>
