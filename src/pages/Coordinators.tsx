@@ -26,7 +26,7 @@ export default function Coordinators() {
       }
     },
     {
-      name: "Rudraksha Gupta",
+      name: "Rudransh Gupta",
       role: "Main Coordinator",
       image: "../../images/rudrash.jpeg",
       bio: "Driving technical innovation and digital presence for Creators Corner's growing platform.",
