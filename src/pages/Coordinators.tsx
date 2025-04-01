@@ -1,3 +1,4 @@
+// Coordinators page component that displays the team of coordinators with their details and social links
 import Navbar from '../components/Navbar';
 import CoordinatorCard from '../components/CoordinatorCard';
 
@@ -9,10 +10,10 @@ export default function Coordinators() {
       image: "../../images/sahil.jpeg",
       bio: "Leading the creative vision of Creators Corner with expertise in content strategy and community building.",
       socials: {
-        instagram: "sahil.kumar",
-        linkedin: "sahilkumar",
-        twitter: "sahilk"
-      }
+        instagram: 'sahil.kumar',
+        linkedin: 'sahilkumar',
+        twitter: 'sahilk',
+      },
     },
     {
       name: "Yash Mali",
@@ -20,10 +21,10 @@ export default function Coordinators() {
       image: "../../images/yash.jpeg",
       bio: "Specializing in event management and creator partnerships to bring unique opportunities to our community.",
       socials: {
-        instagram: "yash.mali",
-        linkedin: "yashmali",
-        twitter: "yashm"
-      }
+        instagram: 'yash.mali',
+        linkedin: 'yashmali',
+        twitter: 'yashm',
+      },
     },
     {
       name: "Rudransh Gupta",
@@ -31,11 +32,11 @@ export default function Coordinators() {
       image: "../../images/rudrash.jpeg",
       bio: "Driving technical innovation and digital presence for Creators Corner's growing platform.",
       socials: {
-        instagram: "rudraksha.gupta",
-        linkedin: "rudrakshagupta",
-        twitter: "rudrakshag"
-      }
-    }
+        instagram: 'rudraksha.gupta',
+        linkedin: 'rudrakshagupta',
+        twitter: 'rudrakshag',
+      },
+    },
   ];
 
   return (
@@ -48,11 +49,7 @@ export default function Coordinators() {
           </h1>
           <div className="grid grid-cols-1 gap-12">
             {coordinators.map((coordinator, index) => (
-                    <div
-                    key={index}
-                    className="group bg-white dark:bg-gray-800 rounded-xl shadow-lg transform transition duration-300 hover:-translate-y-3 hover:shadow-2xl"
-                  >
-              <CoordinatorCard key={index} {...coordinator} /></div>
+              <CoordinatorCard key={index} {...coordinator} />
             ))}
           </div>
         </div>
