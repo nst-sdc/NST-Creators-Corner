@@ -1,23 +1,23 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Github } from 'lucide-react';
-import Navbar from '../components/Navbar';
-import TeamMember from '../components/TeamMember';
-import EventCard from '../components/EventCard';
-import AnimatedSection from '../components/AnimatedSection';
-import Button from '../components/Button';
+import React from "react";
+import { motion } from "framer-motion";
+import { Github } from "lucide-react";
+import Navbar from "../components/Navbar";
+import TeamMember from "../components/TeamMember";
+import EventCard from "../components/EventCard";
+import AnimatedSection from "../components/AnimatedSection";
+import Button from "../components/Button";
 
 export default function Home() {
   const videos = [
-    { id: '6pa5VZdKyqY', title: 'Creators Corner Video 1' },
-    { id: 'oL2Lt8tT1ug', title: 'Creators Corner Video 2' },
-    { id: '8kQyKTvtIUQ', title: 'Creators Corner Video 3' }
+    { id: "6pa5VZdKyqY", title: "Creators Corner Video 1" },
+    { id: "oL2Lt8tT1ug", title: "Creators Corner Video 2" },
+    { id: "8kQyKTvtIUQ", title: "Creators Corner Video 3" },
   ];
 
   return (
     <>
       <Navbar />
-      
+
       {/* Hero Section */}
       <section className="pt-20 bg-gradient-to-br from-purple-800 via-indigo-700 to-pink-600 dark:from-navy dark:via-navy-light dark:to-navy relative overflow-hidden transition-colors duration-300">
         <motion.div
@@ -59,7 +59,9 @@ export default function Home() {
       {/* Video Showcase Section */}
       <AnimatedSection className="py-20 bg-gray-900 dark:bg-navy transition-colors duration-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center text-white mb-12">Featured Content</h2>
+          <h2 className="text-3xl font-bold text-center text-white mb-12">
+            Featured Content
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {videos.map((video, index) => (
               <motion.div
@@ -86,7 +88,9 @@ export default function Home() {
       {/* Team Preview Section */}
       <AnimatedSection className="py-20 bg-indigo-50 dark:bg-navy-light via-white dark:via-navy text-gray-800 dark:text-white transition-colors duration-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center mb-12">Our Leadership</h2>
+          <h2 className="text-3xl font-bold text-center mb-12">
+            Our Leadership
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <TeamMember
               name="Sahil Kumar"
@@ -110,7 +114,9 @@ export default function Home() {
       {/* Events Section */}
       <AnimatedSection className="py-20 bg-purple-50 dark:bg-navy text-gray-800 dark:text-white transition-colors duration-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center mb-12">Upcoming Events</h2>
+          <h2 className="text-3xl font-bold text-center mb-12">
+            Upcoming Events
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <EventCard
               title="PodCoast 2024"
@@ -132,7 +138,9 @@ export default function Home() {
       <footer className="bg-gray-900 dark:bg-navy text-white py-8 transition-colors duration-300">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-400">© 2024 Creators Corner. All rights reserved.</p>
+            <p className="text-gray-400">
+              © 2024 Creators Corner. All rights reserved.
+            </p>
             <motion.a
               href="https://github.com/AryanVBW"
               target="_blank"

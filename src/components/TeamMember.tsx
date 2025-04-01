@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 
 interface TeamMemberProps {
   name: string;
@@ -8,11 +8,10 @@ interface TeamMemberProps {
 
 export default function TeamMember({ name, role, image }: TeamMemberProps) {
   return (
-<motion.div
-  whileHover={{ y: -10 }}
-  className="flex flex-col items-center p-6 space-y-4 bg-white dark:bg-navy text-gray-800 dark:text-white rounded-xl shadow-md transition-colors duration-300 hover:shadow-xl"
->
-
+    <motion.div
+      whileHover={{ y: -10 }}
+      className="flex flex-col items-center p-6 space-y-4 bg-white dark:bg-navy text-gray-800 dark:text-white rounded-xl shadow-md transition-colors duration-300 hover:shadow-xl"
+    >
       <motion.img
         whileHover={{ scale: 1.1 }}
         src={image}

@@ -1,8 +1,8 @@
-import './index.css'; // Tailwind import
-import { Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
-import Coordinators from './pages/Coordinators';
-import ContactForm from './pages/ContactForm';
+import "./index.css"; // Tailwind import
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Coordinators from "./pages/Coordinators";
+import ContactForm from "./pages/ContactForm";
 
 function App() {
   return (
@@ -15,7 +15,5 @@ function App() {
     </div>
   );
 }
-
-
 
 export default App;

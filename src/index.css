@@ -13,7 +13,7 @@
     position: relative;
     padding-bottom: 56.25%;
   }
-  
+
   .aspect-h-9 {
     position: absolute;
     height: 100%;
@@ -26,4 +26,3 @@
 body {
   @apply transition-colors duration-300;
 }
-

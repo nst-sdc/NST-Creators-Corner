@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { Sun, Moon } from 'lucide-react';
+import { useState } from "react";
+import { Sun, Moon } from "lucide-react";
 
 export default function ThemeToggle() {
   const [isDark, setIsDark] = useState(false);
@@ -7,9 +7,9 @@ export default function ThemeToggle() {
   const toggleTheme = () => {
     const htmlElement = document.documentElement;
     if (!isDark) {
-      htmlElement.classList.add('dark'); // Apply dark mode
+      htmlElement.classList.add("dark"); // Apply dark mode
     } else {
-      htmlElement.classList.remove('dark'); // Remove dark mode
+      htmlElement.classList.remove("dark"); // Remove dark mode
     }
     setIsDark(!isDark); // Update state
   };
