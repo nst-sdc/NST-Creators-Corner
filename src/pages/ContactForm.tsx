@@ -26,7 +26,7 @@ export default function ContactForm() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.8 }}
-            className="bg-white dark:bg-navy rounded-xl shadow-lg p-8 md:p-10 transition-colors duration-300" 
+            className="bg-white dark:bg-navy rounded-xl shadow-lg p-8 md:p-10 transition-colors duration-300"
           >
             <iframe
               src="https://docs.google.com/forms/d/e/your-form-id/viewform?embedded=true"
@@ -35,7 +35,7 @@ export default function ContactForm() {
               frameBorder="0"
               marginHeight={0}
               marginWidth={0}
-              className="w-full rounded-lg" 
+              className="w-full rounded-lg"
             >
               Loading form...
             </iframe>
