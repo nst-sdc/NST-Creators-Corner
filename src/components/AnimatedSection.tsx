@@ -6,7 +6,10 @@ interface AnimatedSectionProps {
   className?: string;
 }
 
-export default function AnimatedSection({ children, className = '' }: AnimatedSectionProps) {
+export default function AnimatedSection({
+  children,
+  className = '',
+}: AnimatedSectionProps) {
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.1,
@@ -23,5 +26,4 @@ export default function AnimatedSection({ children, className = '' }: AnimatedSe
       {children}
     </motion.div>
   );
-  
 }

@@ -7,6 +7,7 @@
     "allowSyntheticDefaultImports": true,
 
     /* Bundler mode */
+    "emitDeclarationOnly": true,
     "allowImportingTsExtensions": true,
     "isolatedModules": true,
     "moduleDetection": "force",

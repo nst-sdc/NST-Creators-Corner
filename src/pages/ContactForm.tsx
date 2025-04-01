@@ -5,7 +5,7 @@ export default function ContactForm() {
   return (
     <>
       <Navbar />
-      
+
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="space-y-8">
           <motion.div
@@ -14,10 +14,14 @@ export default function ContactForm() {
             transition={{ duration: 0.8 }}
             className="text-center"
           >
-            <h1 className="text-4xl font-bold text-gray-800 mb-4">Register for PodCoast Event</h1>
-            <p className="text-xl text-gray-600">Join us for an amazing podcasting experience!</p>
+            <h1 className="text-4xl font-bold text-gray-800 mb-4">
+              Register for PodCoast Event
+            </h1>
+            <p className="text-xl text-gray-600">
+              Join us for an amazing podcasting experience!
+            </p>
           </motion.div>
-          
+
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}

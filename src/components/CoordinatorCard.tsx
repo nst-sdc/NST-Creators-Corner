@@ -12,10 +12,15 @@ interface CoordinatorCardProps {
   };
 }
 
-export default function CoordinatorCard({ name, role, image, bio, socials }: CoordinatorCardProps) {
+export default function CoordinatorCard({
+  name,
+  role,
+  image,
+  bio,
+  socials,
+}: CoordinatorCardProps) {
   return (
     <div className="bg-white dark:bg-navy text-gray-800 dark:text-white rounded-xl shadow-lg overflow-hidden transition-colors">
-
       <div className="md:flex">
         <div className="md:flex-shrink-0">
           <img
@@ -25,10 +30,14 @@ export default function CoordinatorCard({ name, role, image, bio, socials }: Coo
           />
         </div>
         <div className="p-8">
-          <div className="uppercase tracking-wide text-sm text-indigo-600 dark:text-indigo-400 font-semibold">{role}</div>
-          <h2 className="mt-2 text-xl font-semibold text-gray-800 dark:text-white">{name}</h2>
+          <div className="uppercase tracking-wide text-sm text-indigo-600 dark:text-indigo-400 font-semibold">
+            {role}
+          </div>
+          <h2 className="mt-2 text-xl font-semibold text-gray-800 dark:text-white">
+            {name}
+          </h2>
           <p className="mt-3 text-gray-600 dark:text-gray-300">{bio}</p>
-          
+
           <div className="mt-4 flex space-x-4">
             <a
               href={`https://instagram.com/${socials.instagram}`}
