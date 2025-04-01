@@ -51,7 +51,6 @@ export default function Coordinators() {
             {coordinators.map((coordinator, index) => (
               <div
                 key={index}
-                // done
                 className="group bg-white dark:bg-gray-800 rounded-xl shadow-lg transform transition duration-300 hover:-translate-y-3 hover:shadow-2xl"
               >
                 <CoordinatorCard key={index} {...coordinator} />
