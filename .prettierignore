@@ -1,0 +1,14 @@
+# Ignore artifacts:
+build
+dist
+node_modules
+
+# Ignore configuration files:
+*.config.js
+*.config.ts
+
+# Ignore log files:
+*.log
+
+# Ignore other files:
+*.md
