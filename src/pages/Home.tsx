@@ -49,7 +49,7 @@ export default function Home() {
               transition={{ delay: 0.6, duration: 0.8 }}
             >
               <Button href="/contact" variant="secondary">
-                Register for PodCoast Event
+                Register for Podcast Event
               </Button>
             </motion.div>
           </div>
@@ -113,14 +113,14 @@ export default function Home() {
           <h2 className="text-3xl font-bold text-center mb-12">Upcoming Events</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <EventCard
-              title="PodCoast 2024"
-              date="March 25, 2024"
+              title="Podcast 2025"
+              date="March 25, 2025"
               description="Join us for an immersive podcasting workshop where you'll learn from industry experts and network with fellow creators!"
               image="https://images.unsplash.com/photo-1478737270239-2f02b77fc618?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
             />
             <EventCard
               title="Content Creation Masterclass"
-              date="April 15, 2024"
+              date="April 15, 2025"
               description="Master the art of content creation with hands-on workshops covering video, audio, and social media optimization."
               image="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
             />

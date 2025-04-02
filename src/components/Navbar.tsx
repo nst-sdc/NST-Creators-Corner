@@ -22,27 +22,36 @@ export default function Navbar() {
           <div className="hidden md:flex items-center space-x-8">
             <motion.a
               href="/"
-              className="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
+              className="relative text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
               Home
+              <span
+                className="absolute bottom-0 left-1/2 w-0 h-[2px] bg-indigo-600 dark:bg-indigo-400 transition-all duration-300 transform -translate-x-1/2"
+              ></span>
             </motion.a>
             <motion.a
               href="/coordinators"
-              className="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
+              className="relative text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
               Team
+              <span
+                className="absolute bottom-0 left-1/2 w-0 h-[2px] bg-indigo-600 dark:bg-indigo-400 transition-all duration-300 transform -translate-x-1/2"
+              ></span>
             </motion.a>
             <motion.a
               href="/contact"
-              className="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
+              className="relative text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
               Register
+              <span
+                className="absolute bottom-0 left-1/2 w-0 h-[2px] bg-indigo-600 dark:bg-indigo-400 transition-all duration-300 transform -translate-x-1/2"
+              ></span>
             </motion.a>
           </div>
 
@@ -62,9 +71,24 @@ export default function Navbar() {
           exit={{ opacity: 0, y: -10 }}
         >
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <a href="/" className="block px-3 py-2 text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400">Home</a>
-            <a href="/coordinators" className="block px-3 py-2 text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400">Team</a>
-            <a href="/contact" className="block px-3 py-2 text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400">Register</a>
+            <a href="/" className="block px-3 py-2 relative text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400">
+              Home
+              <span
+                className="absolute bottom-0 left-1/2 w-0 h-[2px] bg-indigo-600 dark:bg-indigo-400 transition-all duration-300 transform -translate-x-1/2"
+              ></span>
+            </a>
+            <a href="/coordinators" className="block px-3 py-2 relative text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400">
+              Team
+              <span
+                className="absolute bottom-0 left-1/2 w-0 h-[2px] bg-indigo-600 dark:bg-indigo-400 transition-all duration-300 transform -translate-x-1/2"
+              ></span>
+            </a>
+            <a href="/contact" className="block px-3 py-2 relative text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400">
+              Register
+              <span
+                className="absolute bottom-0 left-1/2 w-0 h-[2px] bg-indigo-600 dark:bg-indigo-400 transition-all duration-300 transform -translate-x-1/2"
+              ></span>
+            </a>
           </div>
         </motion.div>
       )}

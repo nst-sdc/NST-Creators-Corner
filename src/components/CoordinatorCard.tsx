@@ -1,4 +1,6 @@
 import { Instagram, Linkedin, Twitter } from 'lucide-react';
+import { motion } from 'framer-motion';
+import { useState } from 'react';
 
 interface CoordinatorCardProps {
   name: string;
@@ -13,9 +15,29 @@ interface CoordinatorCardProps {
 }
 
 export default function CoordinatorCard({ name, role, image, bio, socials }: CoordinatorCardProps) {
-  return (
-    <div className="bg-white dark:bg-navy text-gray-800 dark:text-white rounded-xl shadow-lg overflow-hidden transition-colors">
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
+    const { clientX, clientY, currentTarget } = e;
+    const { offsetLeft, offsetTop, offsetWidth, offsetHeight } = currentTarget;
+
+    const x = ((clientX - offsetLeft) / offsetWidth) * 30 - 15;
+    const y = ((clientY - offsetTop) / offsetHeight) * 30 - 15; 
+
+    setMousePosition({ x, y });
+  };
+
+  const handleMouseLeave = () => {
+    setMousePosition({ x: 0, y: 0 });
+  };
+
+  return (
+    <motion.div
+      className="bg-white dark:bg-navy text-gray-800 dark:text-white rounded-xl shadow-lg overflow-hidden transition-colors"
+      style={{ transform: `rotateX(${mousePosition.y}deg) rotateY(${mousePosition.x}deg)` }}
+      onMouseMove={handleMouseMove}
+      onMouseLeave={handleMouseLeave}
+    >
       <div className="md:flex">
         <div className="md:flex-shrink-0">
           <img
@@ -57,6 +79,6 @@ export default function CoordinatorCard({ name, role, image, bio, socials }: Coo
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
