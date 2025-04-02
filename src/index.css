@@ -22,3 +22,8 @@
     top: 0;
   }
 }
+
+body {
+  @apply transition-colors duration-300;
+}
+
