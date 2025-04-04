@@ -9,11 +9,10 @@ interface EventCardProps {
 
 export default function EventCard({ title, date, description, image }: EventCardProps) {
   return (
-<motion.div
-  className="bg-white dark:bg-navy text-gray-800 dark:text-white rounded-xl shadow-md overflow-hidden transition-colors"
-  whileHover={{ y: -5 }}
->
-
+    <motion.div
+      className="bg-white dark:bg-navy text-gray-800 dark:text-white rounded-xl shadow-md overflow-hidden transition-colors"
+      whileHover={{ y: -5 }}
+    >
       <motion.img
         whileHover={{ scale: 1.05 }}
         transition={{ duration: 0.3 }}

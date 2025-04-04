@@ -23,5 +23,4 @@ export default function AnimatedSection({ children, className = '' }: AnimatedSe
       {children}
     </motion.div>
   );
-  
 }

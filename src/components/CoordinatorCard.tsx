@@ -22,7 +22,7 @@ export default function CoordinatorCard({ name, role, image, bio, socials }: Coo
     const { offsetLeft, offsetTop, offsetWidth, offsetHeight } = currentTarget;
 
     const x = ((clientX - offsetLeft) / offsetWidth) * 30 - 15;
-    const y = ((clientY - offsetTop) / offsetHeight) * 30 - 15; 
+    const y = ((clientY - offsetTop) / offsetHeight) * 30 - 15;
 
     setMousePosition({ x, y });
   };
@@ -40,17 +40,15 @@ export default function CoordinatorCard({ name, role, image, bio, socials }: Coo
     >
       <div className="md:flex">
         <div className="md:flex-shrink-0">
-          <img
-            className="h-48 w-full md:w-48 object-cover"
-            src={image}
-            alt={name}
-          />
+          <img className="h-48 w-full md:w-48 object-cover" src={image} alt={name} />
         </div>
         <div className="p-8">
-          <div className="uppercase tracking-wide text-sm text-indigo-600 dark:text-indigo-400 font-semibold">{role}</div>
+          <div className="uppercase tracking-wide text-sm text-indigo-600 dark:text-indigo-400 font-semibold">
+            {role}
+          </div>
           <h2 className="mt-2 text-xl font-semibold text-gray-800 dark:text-white">{name}</h2>
           <p className="mt-3 text-gray-600 dark:text-gray-300">{bio}</p>
-          
+
           <div className="mt-4 flex space-x-4">
             <a
               href={`https://instagram.com/${socials.instagram}`}

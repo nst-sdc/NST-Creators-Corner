@@ -14,14 +14,14 @@ export default function TeamMember({ name, role, image }: TeamMemberProps) {
     const { clientX, clientY, currentTarget } = e;
     const { offsetLeft, offsetTop, offsetWidth, offsetHeight } = currentTarget;
 
-    const x = ((clientX - offsetLeft) / offsetWidth) * 5 - 9; 
-    const y = ((clientY - offsetTop) / offsetHeight) * 5 - 9; 
+    const x = ((clientX - offsetLeft) / offsetWidth) * 5 - 9;
+    const y = ((clientY - offsetTop) / offsetHeight) * 5 - 9;
 
     setMousePosition({ x, y });
   };
 
   const handleMouseLeave = () => {
-    setMousePosition({ x: 0, y: 0 }); 
+    setMousePosition({ x: 0, y: 0 });
   };
 
   return (

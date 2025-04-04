@@ -15,13 +15,17 @@ declare module 'framer-motion' {
     style?: React.CSSProperties;
     [key: string]: any;
   }
-  
+
   export interface MotionDivProps extends MotionProps, React.HTMLAttributes<HTMLDivElement> {}
-  export interface MotionHeadingProps extends MotionProps, React.HTMLAttributes<HTMLHeadingElement> {}
-  export interface MotionParagraphProps extends MotionProps, React.HTMLAttributes<HTMLParagraphElement> {}
+  export interface MotionHeadingProps
+    extends MotionProps,
+      React.HTMLAttributes<HTMLHeadingElement> {}
+  export interface MotionParagraphProps
+    extends MotionProps,
+      React.HTMLAttributes<HTMLParagraphElement> {}
   export interface MotionAnchorProps extends MotionProps, React.HTMLAttributes<HTMLAnchorElement> {}
   export interface MotionSpanProps extends MotionProps, React.HTMLAttributes<HTMLSpanElement> {}
-  
+
   export const motion: {
     div: React.FC<MotionDivProps>;
     h1: React.FC<MotionHeadingProps>;
@@ -40,12 +44,12 @@ declare module 'react-intersection-observer' {
 
 declare module 'lucide-react' {
   import * as React from 'react';
-  
+
   export interface IconProps extends React.SVGAttributes<SVGElement> {
     size?: number | string;
     strokeWidth?: number | string;
   }
-  
+
   export const Youtube: React.FC<IconProps>;
   export const Mail: React.FC<IconProps>;
   export const MapPin: React.FC<IconProps>;
