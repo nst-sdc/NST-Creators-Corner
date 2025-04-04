@@ -11,7 +11,7 @@ export default function ThemeToggle() {
     } else {
       htmlElement.classList.remove('dark'); // Remove dark mode
     }
-    setIsDark(!isDark); 
+    setIsDark(!isDark);
   };
 
   return (

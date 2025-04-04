@@ -5,10 +5,10 @@ import CoordinatorCard from '../components/CoordinatorCard';
 export default function Coordinators() {
   const coordinators = [
     {
-      name: "Sahil Kumar",
-      role: "Main Coordinator",
-      image: "../../images/sahil.jpeg",
-      bio: "Leading the creative vision of Creators Corner with expertise in content strategy and community building.",
+      name: 'Sahil Kumar',
+      role: 'Main Coordinator',
+      image: '../../images/sahil.jpeg',
+      bio: 'Leading the creative vision of Creators Corner with expertise in content strategy and community building.',
       socials: {
         instagram: 'sahil.kumar',
         linkedin: 'sahilkumar',
@@ -16,10 +16,10 @@ export default function Coordinators() {
       },
     },
     {
-      name: "Yash Mali",
-      role: "Main Coordinator",
-      image: "../../images/yash.jpeg",
-      bio: "Specializing in event management and creator partnerships to bring unique opportunities to our community.",
+      name: 'Yash Mali',
+      role: 'Main Coordinator',
+      image: '../../images/yash.jpeg',
+      bio: 'Specializing in event management and creator partnerships to bring unique opportunities to our community.',
       socials: {
         instagram: 'yash.mali',
         linkedin: 'yashmali',
@@ -27,9 +27,9 @@ export default function Coordinators() {
       },
     },
     {
-      name: "Rudransh Gupta",
-      role: "Main Coordinator",
-      image: "../../images/rudrash.jpeg",
+      name: 'Rudransh Gupta',
+      role: 'Main Coordinator',
+      image: '../../images/rudrash.jpeg',
       bio: "Driving technical innovation and digital presence for Creators Corner's growing platform.",
       socials: {
         instagram: 'rudraksha.gupta',

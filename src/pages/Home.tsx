@@ -11,13 +11,13 @@ export default function Home() {
   const videos = [
     { id: '6pa5VZdKyqY', title: 'Creators Corner Video 1' },
     { id: 'oL2Lt8tT1ug', title: 'Creators Corner Video 2' },
-    { id: '8kQyKTvtIUQ', title: 'Creators Corner Video 3' }
+    { id: '8kQyKTvtIUQ', title: 'Creators Corner Video 3' },
   ];
 
   return (
     <>
       <Navbar />
-      
+
       {/* Hero Section */}
       <section className="pt-20 bg-gradient-to-br from-purple-800 via-indigo-700 to-pink-600 dark:from-navy dark:via-navy-light dark:to-navy relative overflow-hidden transition-colors duration-300">
         <motion.div
@@ -93,11 +93,7 @@ export default function Home() {
               role="Main Coordinator"
               image="../../images/sahil.jpeg"
             />
-            <TeamMember
-              name="Yash Mali"
-              role="Main Coordinator"
-              image="../../images/yash.jpeg"
-            />
+            <TeamMember name="Yash Mali" role="Main Coordinator" image="../../images/yash.jpeg" />
             <TeamMember
               name="Rudraksha Gupta"
               role="Main Coordinator"

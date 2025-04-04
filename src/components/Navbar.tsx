@@ -27,9 +27,7 @@ export default function Navbar() {
               whileTap={{ scale: 0.95 }}
             >
               Home
-              <span
-                className="absolute bottom-0 left-1/2 w-0 h-[2px] bg-indigo-600 dark:bg-indigo-400 transition-all duration-300 transform -translate-x-1/2"
-              ></span>
+              <span className="absolute bottom-0 left-1/2 w-0 h-[2px] bg-indigo-600 dark:bg-indigo-400 transition-all duration-300 transform -translate-x-1/2"></span>
             </motion.a>
             <motion.a
               href="/coordinators"
@@ -38,9 +36,7 @@ export default function Navbar() {
               whileTap={{ scale: 0.95 }}
             >
               Team
-              <span
-                className="absolute bottom-0 left-1/2 w-0 h-[2px] bg-indigo-600 dark:bg-indigo-400 transition-all duration-300 transform -translate-x-1/2"
-              ></span>
+              <span className="absolute bottom-0 left-1/2 w-0 h-[2px] bg-indigo-600 dark:bg-indigo-400 transition-all duration-300 transform -translate-x-1/2"></span>
             </motion.a>
             <motion.a
               href="/contact"
@@ -49,9 +45,7 @@ export default function Navbar() {
               whileTap={{ scale: 0.95 }}
             >
               Register
-              <span
-                className="absolute bottom-0 left-1/2 w-0 h-[2px] bg-indigo-600 dark:bg-indigo-400 transition-all duration-300 transform -translate-x-1/2"
-              ></span>
+              <span className="absolute bottom-0 left-1/2 w-0 h-[2px] bg-indigo-600 dark:bg-indigo-400 transition-all duration-300 transform -translate-x-1/2"></span>
             </motion.a>
           </div>
 
@@ -71,23 +65,26 @@ export default function Navbar() {
           exit={{ opacity: 0, y: -10 }}
         >
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <a href="/" className="block px-3 py-2 relative text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400">
+            <a
+              href="/"
+              className="block px-3 py-2 relative text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400"
+            >
               Home
-              <span
-                className="absolute bottom-0 left-1/2 w-0 h-[2px] bg-indigo-600 dark:bg-indigo-400 transition-all duration-300 transform -translate-x-1/2"
-              ></span>
+              <span className="absolute bottom-0 left-1/2 w-0 h-[2px] bg-indigo-600 dark:bg-indigo-400 transition-all duration-300 transform -translate-x-1/2"></span>
             </a>
-            <a href="/coordinators" className="block px-3 py-2 relative text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400">
+            <a
+              href="/coordinators"
+              className="block px-3 py-2 relative text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400"
+            >
               Team
-              <span
-                className="absolute bottom-0 left-1/2 w-0 h-[2px] bg-indigo-600 dark:bg-indigo-400 transition-all duration-300 transform -translate-x-1/2"
-              ></span>
+              <span className="absolute bottom-0 left-1/2 w-0 h-[2px] bg-indigo-600 dark:bg-indigo-400 transition-all duration-300 transform -translate-x-1/2"></span>
             </a>
-            <a href="/contact" className="block px-3 py-2 relative text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400">
+            <a
+              href="/contact"
+              className="block px-3 py-2 relative text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400"
+            >
               Register
-              <span
-                className="absolute bottom-0 left-1/2 w-0 h-[2px] bg-indigo-600 dark:bg-indigo-400 transition-all duration-300 transform -translate-x-1/2"
-              ></span>
+              <span className="absolute bottom-0 left-1/2 w-0 h-[2px] bg-indigo-600 dark:bg-indigo-400 transition-all duration-300 transform -translate-x-1/2"></span>
             </a>
           </div>
         </motion.div>
