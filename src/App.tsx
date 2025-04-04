@@ -1,7 +1,7 @@
-import { Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
-import Coordinators from './pages/Coordinators';
-import ContactForm from './pages/ContactForm';
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Coordinators from "./pages/Coordinators";
+import ContactForm from "./pages/ContactForm";
 
 function App() {
   return (

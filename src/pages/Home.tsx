@@ -1,31 +1,31 @@
-import { motion } from 'framer-motion';
-import { Youtube, Mail, MapPin, Phone, Github } from 'lucide-react';
-import Navbar from '../components/Navbar';
-import TeamMember from '../components/TeamMember';
-import EventCard from '../components/EventCard';
-import AnimatedSection from '../components/AnimatedSection';
-import Button from '../components/Button';
+import { motion } from "framer-motion";
+import { Youtube, Mail, MapPin, Phone, Github } from "lucide-react";
+import Navbar from "../components/Navbar";
+import TeamMember from "../components/TeamMember";
+import EventCard from "../components/EventCard";
+import AnimatedSection from "../components/AnimatedSection";
+import Button from "../components/Button";
 
 export default function Home() {
   const videos = [
     {
-      id: '6pa5VZdKyqY',
-      title: 'Creators Corner Video 1'
+      id: "6pa5VZdKyqY",
+      title: "Creators Corner Video 1",
     },
     {
-      id: 'oL2Lt8tT1ug',
-      title: 'Creators Corner Video 2'
+      id: "oL2Lt8tT1ug",
+      title: "Creators Corner Video 2",
     },
     {
-      id: '8kQyKTvtIUQ',
-      title: 'Creators Corner Video 3'
-    }
+      id: "8kQyKTvtIUQ",
+      title: "Creators Corner Video 3",
+    },
   ];
 
   return (
     <>
       <Navbar />
-      
+
       {/* Hero Section */}
       <section className="pt-20 bg-gradient-to-br from-purple-800 via-indigo-700 to-pink-600 relative overflow-hidden">
         <motion.div
@@ -62,7 +62,7 @@ export default function Home() {
             </motion.div>
           </div>
         </motion.div>
-        
+
         {/* Animated background elements */}
         <div className="absolute inset-0 overflow-hidden">
           {[...Array(5)].map((_, i) => (
@@ -93,14 +93,14 @@ export default function Home() {
       {/* Video Showcase Section */}
       <AnimatedSection className="py-20 bg-gradient-to-br from-gray-900 to-indigo-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.h2 
+          <motion.h2
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             className="text-3xl font-bold text-center text-white mb-12"
           >
             Featured Content
           </motion.h2>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {videos.map((video, index) => (
               <motion.div
@@ -129,7 +129,9 @@ export default function Home() {
       {/* Team Preview Section */}
       <AnimatedSection className="py-20 bg-gradient-to-br from-indigo-50 via-white to-purple-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">Our Leadership</h2>
+          <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
+            Our Leadership
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <TeamMember
               name="Sahil Kumar"
@@ -158,9 +160,14 @@ export default function Home() {
       {/* Events Section */}
       <AnimatedSection className="py-20 bg-gradient-to-br from-purple-50 via-white to-indigo-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">Upcoming Events</h2>
+          <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
+            Upcoming Events
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <motion.div whileHover={{ scale: 1.02 }} transition={{ duration: 0.2 }}>
+            <motion.div
+              whileHover={{ scale: 1.02 }}
+              transition={{ duration: 0.2 }}
+            >
               <EventCard
                 title="PodCoast 2024"
                 date="March 25, 2024"
@@ -168,7 +175,10 @@ export default function Home() {
                 image="https://images.unsplash.com/photo-1478737270239-2f02b77fc618?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
               />
             </motion.div>
-            <motion.div whileHover={{ scale: 1.02 }} transition={{ duration: 0.2 }}>
+            <motion.div
+              whileHover={{ scale: 1.02 }}
+              transition={{ duration: 0.2 }}
+            >
               <EventCard
                 title="Content Creation Masterclass"
                 date="April 15, 2024"
@@ -184,7 +194,9 @@ export default function Home() {
       <footer className="bg-gradient-to-br from-gray-900 to-indigo-900 text-white py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-400">© 2024 Creators Corner. All rights reserved by Vivek W.</p>
+            <p className="text-gray-400">
+              © 2024 Creators Corner. All rights reserved by Vivek W.
+            </p>
             <motion.a
               href="https://github.com/AryanVBW"
               target="_blank"

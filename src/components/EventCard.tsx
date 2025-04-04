@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 
 interface EventCardProps {
   title: string;
@@ -7,7 +7,12 @@ interface EventCardProps {
   image: string;
 }
 
-export default function EventCard({ title, date, description, image }: EventCardProps) {
+export default function EventCard({
+  title,
+  date,
+  description,
+  image,
+}: EventCardProps) {
   return (
     <motion.div
       className="bg-white rounded-xl shadow-md overflow-hidden h-full"

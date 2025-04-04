@@ -1,4 +1,4 @@
-import { Instagram, Linkedin, Twitter } from 'lucide-react';
+import { Instagram, Linkedin, Twitter } from "lucide-react";
 
 interface CoordinatorCardProps {
   name: string;
@@ -12,7 +12,13 @@ interface CoordinatorCardProps {
   };
 }
 
-export default function CoordinatorCard({ name, role, image, bio, socials }: CoordinatorCardProps) {
+export default function CoordinatorCard({
+  name,
+  role,
+  image,
+  bio,
+  socials,
+}: CoordinatorCardProps) {
   return (
     <div className="bg-white rounded-xl shadow-lg overflow-hidden">
       <div className="md:flex">
@@ -24,10 +30,12 @@ export default function CoordinatorCard({ name, role, image, bio, socials }: Coo
           />
         </div>
         <div className="p-8">
-          <div className="uppercase tracking-wide text-sm text-indigo-600 font-semibold">{role}</div>
+          <div className="uppercase tracking-wide text-sm text-indigo-600 font-semibold">
+            {role}
+          </div>
           <h2 className="mt-2 text-xl font-semibold text-gray-800">{name}</h2>
           <p className="mt-3 text-gray-600">{bio}</p>
-          
+
           <div className="mt-4 flex space-x-4">
             <a
               href={`https://instagram.com/${socials.instagram}`}
