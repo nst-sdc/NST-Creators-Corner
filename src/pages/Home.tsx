@@ -256,7 +256,7 @@ export default function Home() {
           href="/contact"
           variant="secondary"
           className="relative text-lg px-8 py-4 rounded-full shadow-xl group overflow-hidden bg-white/10 backdrop-blur-md border border-white/20"
-          style={{ fontFamily: "'Inter', sans-serif" }}
+          style = {{ fontFamily: "'Inter', sans-serif" }}
         >
           <motion.span
             className="absolute inset-0 bg-gradient-to-r from-fuchsia-600 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
